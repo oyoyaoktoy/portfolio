@@ -105,11 +105,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .status .dot { display: inline-flex; align-items: center; gap: 8px; color: var(--green); font-family: var(--font-mono); font-size: 12px; }
 .status .dot::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px var(--green-tint); }
 .status b { font-weight: 600; }
-.badge {
-  position: absolute; left: -4px; top: 8%; width: 104px; height: 104px; border-radius: 50%;
-  background: var(--amber); color: #1D2622; display: grid; place-items: center; text-align: center;
-  font-family: var(--font-display); font-weight: 700; font-size: 13px; line-height: 1.2; padding: 14px;
-}
 
 .strip { border-top: 1px solid var(--line); padding-block: 22px; }
 .strip .wrap { display: flex; flex-wrap: wrap; gap: 14px 36px; align-items: center; }
@@ -272,7 +267,6 @@ footer .wrap { padding-block: 20px; font-size: 14px; display: flex; flex-wrap: w
   .skill summary { grid-template-columns: 36px minmax(0, 1fr) 36px; gap: 10px; padding: 16px; }
   .skill-body { padding: 0 16px 18px; }
   .about dl { grid-template-columns: minmax(0, 1fr); }
-  .badge { width: 84px; height: 84px; font-size: 11px; }
   .nav .cta { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn, .card, .skill .arrow { transition: none; } }
